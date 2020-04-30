@@ -27,12 +27,11 @@ class AllStudents extends Component {
   };
 
   render() {
-    console.log("-->", this.state);
+    console.log(this.props);
     const { students, isLoading } = this.state;
-    console.log(isLoading);
     return (
       <div>
-        <p>AllStudents page</p>
+        <StyledP>All Students page</StyledP>
         {isLoading ? <StyledP>Loading...</StyledP> : null}
         <ul>
           {students.map(({ _id, name }) => {

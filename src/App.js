@@ -6,6 +6,7 @@ import { Router } from "@reach/router";
 import HomeMain from "./components/HomeMain";
 import Footer from "./components/Footer";
 import AllStudents from "./components/AllStudents";
+import Block from "./components/Block";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Navbar />
       <Router>
         <HomeMain path="/" />
-        <AllStudents path="/all_students" />
+        <AllStudents path="/students" />
+        <Block path="/students/block" />
       </Router>
       <Footer />
     </div>
